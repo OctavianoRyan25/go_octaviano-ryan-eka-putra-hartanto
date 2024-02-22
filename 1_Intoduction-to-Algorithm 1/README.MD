@@ -2,11 +2,7 @@
 
 ## Introduction to Algorithm
 
-### Resume zoom tanggal 19 Feb 24
-
-Pada pertemuan 1 kali ini berisi perkenalan tiap tiap member alteera divisi Golang, lalu melakukan test coding melalui patform hackerrank
-
-### Resume materi alterra Introduction Algorithm 1
+### Resume materi alterra Introduction Algorithm
 
 **Algotima** adalah prosedur komputasi yang didefinisikan dengan baik yang mengambil beberapa nilai sebagai input dan menghasilkan beberapa nilai sebagai output
 
@@ -20,10 +16,20 @@ karakteristik algoritma
 
 -   Memiliki batas(awal dan akhiran)
 -   Instruksi terdefinisi dengan baik
-    \_ Efektif dan efisien
+-   Efektif dan efisien
 
 Algoritma dasar
 
 -   Sequence
 -   Branching
 -   Looping
+
+**Flowchart** adalah suatu bagan dengan simbol tertentu yang menggambarkan urutan dan hubungan antar proses secara mendetail
+
+simbol dari flowchart
+
+-   Oval = mulai/selesai
+-   Persegi panjang = proses
+-   Jajargenjang = I/O
+-   Belahketupat = kondisi(if statement)
+-   Segienam = Looping
