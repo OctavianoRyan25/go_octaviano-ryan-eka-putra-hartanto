@@ -3,24 +3,24 @@ package main
 import "fmt"
 
 func main() {
-	var str1 string = "pulsa"
-	var str2 string = "palsu"
-	if isAnagram(str1, str2) {
+	var param1 string = "pulsa"
+	var param2 string = "palsu"
+	if isAnagram(param1, param2) {
 		fmt.Println("Anagram")
 	}else{
 		fmt.Println("Bukan Anagram")
 	}
 }
 
-func isAnagram(str1 string, str2 string) bool{
-	if len(str1) != len(str2) {
+func isAnagram(param1 string, param2 string) bool{
+	if len(param1) != len(param2) {
 		return false
 	}
 	m := make(map[rune]int)
-	for _, r := range str1 {
+	for _, r := range param1 {
 		m[r]++
 	}
-	for _, r := range str2 {
+	for _, r := range param2 {
 		m[r]--
 	}
 	for _, v := range m {

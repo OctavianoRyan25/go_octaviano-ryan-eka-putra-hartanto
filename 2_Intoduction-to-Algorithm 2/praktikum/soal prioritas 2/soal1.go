@@ -3,15 +3,14 @@ package main
 import "fmt"
 
 func main() {
-	for i := 1; i <= 100; i++ {
-		if i%4==0 {
-			fmt.Println(i*i)
-		}else if i%7==0 {
-			fmt.Println(i*i*i)
-		}else if i%4==0 && i%7==0 {
-			fmt.Println("buzz")
-		}else{
-			fmt.Println(i)
+	var param int = 35
+	for i := 1; i <= param; i++ {
+		if param%i == 0 {
+			if i%2 == 0 {
+				fmt.Println("I")
+			}else{
+				fmt.Println("O")
+			}
 		}
 	}
 }
