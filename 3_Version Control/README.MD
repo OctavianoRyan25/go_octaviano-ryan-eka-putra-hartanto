@@ -4,32 +4,14 @@
 
 ### Resume materi alterra Introduction Algorithm
 
-**Algotima** adalah prosedur komputasi yang didefinisikan dengan baik yang mengambil beberapa nilai sebagai input dan menghasilkan beberapa nilai sebagai output
+**Git** adalah satu version control system yang populer digunakan oleh para developer untuk mengembangkan software secara bersama-sama
 
-contoh dari algoritma
+Langkah - langkah melakukan push ke repositori di github
 
--   Check prime number(isPrime)
--   Sorting
--   Searching
+1. lakukan `git init`
+2. lakukan `git add . `( untuk menambahkan semua file yang baru/diubah kedalam staging area)
+3. lakukan `git commit -m <"your message">`
+4. lakukan `git remote add origin git@github.com:UserNameGit/NamaRepository.git`
+5. yang terkahir `git push -u origin master`
 
-karakteristik algoritma
-
--   Memiliki batas(awal dan akhiran)
--   Instruksi terdefinisi dengan baik
--   Efektif dan efisien
-
-Algoritma dasar
-
--   Sequence
--   Branching
--   Looping
-
-**Flowchart** adalah suatu bagan dengan simbol tertentu yang menggambarkan urutan dan hubungan antar proses secara mendetail
-
-simbol dari flowchart
-
--   Oval = mulai/selesai
--   Persegi panjang = proses
--   Jajargenjang = I/O
--   Belahketupat = kondisi(if statement)
--   Segienam = Looping
+Git dapat melihat setaip perubahan dalam suatu repository. Kita dapat melakukan undo jika terjadi permaslahan yang cukup krusial. Maka dari itu mempelajari git sangatlah diharuskan untuk seorang programmer dikarenkan pastinya di suatu perusahaan dipastikan terdapat beberapa developers yang saling bekerjasama untuk membangun suatu aplikasi, dan dengan git inilah yang akan memudahkan untuk versioning dan developing
