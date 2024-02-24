@@ -2,7 +2,7 @@
 
 ## Introduction to Algorithm
 
-### Resume materi alterra Introduction Algorithm
+### Resume materi Version Control and Branch Management
 
 **Git** adalah satu version control system yang populer digunakan oleh para developer untuk mengembangkan software secara bersama-sama
 
