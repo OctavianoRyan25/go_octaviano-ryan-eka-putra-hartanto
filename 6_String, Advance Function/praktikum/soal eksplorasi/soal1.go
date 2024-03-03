@@ -1,56 +1,85 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
+
+type Item struct {
+	item   int
+	lanjut *Item
+}
 
 type Stack struct {
-	item int
-	next *Stack
-	prev *Stack
+	top *Item
 }
 
-var stack, current, top, bottom *Stack
+func (s *Stack) push(item int) {
+	// Cek apakah item sudah ada di stack
+	if !s.isDuplicate(item) {
+		mhsBaru := &Item{
+			item:   item,
+			lanjut: s.top,
+		}
+		s.top = mhsBaru
+		fmt.Printf("Item %v berhasil ditambahkan\n", item)
+	} else {
+		fmt.Println("Item sudah ada di stack")
+	}
+}
+
+func (s *Stack) pop() (*Item, string) {
+	res := "Item berhasil dihapus"
+	if s.top == nil {
+		return nil, res
+	}
+	popped := s.top
+	s.top = s.top.lanjut
+	return popped, res
+}
+
+func (s *Stack) values() {
+	fmt.Println("Print items di stack :")
+	current := s.top
+	for current != nil {
+		fmt.Print(current.item, " ")
+		current = current.lanjut
+	}
+}
+
+func (s *Stack) isEmpty() bool {
+	return s.top == nil
+}
+
+func (s *Stack) isDuplicate(item int) bool {
+	current := s.top
+	for current != nil {
+		if current.item == item {
+			return true
+		}
+		current = current.lanjut
+	}
+	return false
+}
 
 func main() {
-	print()
-	push(1)
-	print()
-	push(2)
-	print()
-}
+	// Inisiasi	stack
+	stack := &Stack{}
 
-func isEmpty() bool {
-	return top == nil
-}
+	//Push item ke dalam stack
+	stack.push(10)
+	stack.push(20)
+	stack.push(22)
+	stack.push(20)
+	stack.push(10)
 
-func push(item int) {
-	current = &Stack{item, nil, nil}
-	if isEmpty() {
-		top = current
-		bottom = current
-	} else {
-		current.next = top
-		top = current
-	}
-}
+	//Print stack
+	stack.values()
 
-func print() {
-	if top == nil {
-		fmt.Println("Stack is empty")
-	}
-	current = top
-	for current != nil {
-		println(current.item)
-		current = current.next
-	}
-}
+	fmt.Println()
 
-func pop(item int) {
-	current = &Stack{item, nil, nil}
-	if isEmpty() {
-		top = current
-		bottom = current
-	} else {
-		current.next = nil
-		top = current
+	// Pop top stack
+	popped1, res := stack.pop()
+	if popped1 != nil {
+		fmt.Println(res)
 	}
 }

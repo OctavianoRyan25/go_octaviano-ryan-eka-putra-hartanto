@@ -53,24 +53,27 @@ func main() {
 	// res := strings.Split(name, "a") //Menghikangkan huruf a
 	// fmt.Println(res)
 
-	//pointer
-	// number := "10"
-	// pointer := &number
-	// numberfix := *pointer
-	// *pointer = "20"
+	//spointer
+	number := "10"
+	pointer := &number
+	number = "20"
+	address := &number
+	pointNumber := *address
 
-	// fmt.Println(*pointer)
-	// fmt.Println(numberfix)
-	cat := Cat{
-		Hewan: Hewan{
-			Famili:  "Felidae",
-			Genus:   "Felis",
-			Species: 1,
-		},
-		Name: "Kucing",
-		Age:  2,
-	}
+	fmt.Println(pointer)
+	fmt.Println(*pointer)
+	fmt.Println(address)
+	fmt.Println(pointNumber)
+	// cat := Cat{
+	// 	Hewan: Hewan{
+	// 		Famili:  "Felidae",
+	// 		Genus:   "Felis",
+	// 		Species: 1,
+	// 	},
+	// 	Name: "Kucing",
+	// 	Age:  2,
+	// }
 
-	fmt.Println(cat)
-	cat.String()
+	// fmt.Println(cat)
+	// cat.String()
 }

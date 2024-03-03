@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	fmt.Println(pickVocals("sepulsa mantap jiwa")) // ltrrcdmy
+	fmt.Println(pickVocals("sepulsa mantap jiwa")) // eua aa ia
 }
 
 func pickVocals(sentence string) string {
