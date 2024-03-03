@@ -1,6 +1,6 @@
-# Resume Pertemuan 4 - Time and Space Complexity
+# Resume Pertemuan 4 - Struktur Data
 
-### Resume materi Time and Space Complexity
+### Resume materi Struktur Data
 
 **ARRAY dan SLICE** adalah struktur data yang mengandung beberapa elemen. Bedanya array memiliki panjang yang fixed sedangkan slice tidak
 Definisi suatu array/slice
