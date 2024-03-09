@@ -55,10 +55,11 @@ func main() {
 
 	//spointer
 	number := "10"
-	pointer := &number
+	// pointer := &number
 	number = "20"
 	address := &number
 	pointNumber := *address
+	var pointer *string = &number
 
 	fmt.Println(pointer)
 	fmt.Println(*pointer)
