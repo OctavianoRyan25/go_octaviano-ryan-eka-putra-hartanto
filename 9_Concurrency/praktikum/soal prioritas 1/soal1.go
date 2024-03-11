@@ -19,22 +19,6 @@ func reverse(s string) {
 	time.Sleep(15 * time.Second)
 }
 
-// func isPrime() {
-// 	go func() {
-// 		for i := 0; i < 100; i++ {
-// 			var result int
-// 			if i%2!=0 {
-// 				for j := 3; j < 3; j++ {
-
-// 				}
-
-// 			}
-// 		}
-// 	}()
-// 	time.Sleep(15 * time.Second)
-
-// }
-
 func main() {
 	reverse("rusak") //kasur
 }
